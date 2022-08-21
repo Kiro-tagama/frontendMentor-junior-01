@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{margin:0;font-family: 'Epilogue', sans-serif;}
+p{font-size:18px;}

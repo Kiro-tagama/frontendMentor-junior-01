@@ -1,0 +1,36 @@
+/* 
+Mobile: 375px
+Desktop: 1440px 
+*/
+
+nav button{
+  @apply p-3 px-5 rounded-xl mx-1
+}
+
+div .main{
+  @apply max-w-[1440px] h-[80vh] grid grid-cols-2 gap-5 justify-items-center content-center flex-1 px-2
+}
+div .main div{
+  @apply max-w-lg
+}
+div .main h1{
+  line-height :50px;
+  font-weight: 700;
+}
+
+div .main .img{
+  content: url('./assets/images/image-hero-desktop.png');
+  @apply max-h-full
+}
+
+
+@media(max-width:375px){
+  
+  div .main{
+    @apply flex flex-col-reverse
+  }
+  div .main .img{
+    content: url('./assets/images/image-hero-mobile.png');
+    @apply mb-4
+  }
+}
