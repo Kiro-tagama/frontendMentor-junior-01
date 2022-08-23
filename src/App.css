@@ -5,7 +5,7 @@ Desktop: 1440px
 body{@apply bg-c1}
 
 nav button{
-  @apply p-3 px-5 rounded-xl mx-1
+  @apply p-3 px-5 rounded-xl mx-2
 }
 
 div .main{
@@ -40,7 +40,7 @@ div .main .img{
   @apply m-1 ml-0
 }
 
-.mobile{visibility: hidden; width: 0;}
+.mobile{visibility: hidden;}
 @media(max-width:810px){
   .desktop{@apply hidden}
   .mobile{@apply visible w-auto}
