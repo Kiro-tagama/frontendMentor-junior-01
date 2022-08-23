@@ -2,6 +2,7 @@
 Mobile: 375px
 Desktop: 1440px 
 */
+body{@apply bg-c1}
 
 nav button{
   @apply p-3 px-5 rounded-xl mx-1
@@ -23,11 +24,39 @@ div .main .img{
   @apply max-h-full
 }
 
+.itemsList{
+  @apply absolute right-1 top-5 bg-[#fff] p-2 rounded-xl drop-shadow-lg w-40
+}
+.itemsList a{
+  @apply flex flex-row p-1 pb-0.5 my-1 items-center border-b-[0.5px] border-[#fff0] hover:border-c2 transition-all duration-500
+}
+.itemsList a img{
+  @apply mr-2 mb-1 
+}
+.bt{
+  @apply px-4 py-2 m-0
+}
+.bt img{
+  @apply m-1 ml-0
+}
 
-@media(max-width:375px){
+.mobile{visibility: hidden; width: 0;}
+@media(max-width:810px){
+  .desktop{@apply hidden}
+  .mobile{@apply visible w-auto}
+
+  .itemsMobile{
+    @apply fixed top-[-54px] right-[-12px] p-2 bg-[#fff] h-[100vh] w-48
+  }
+  .itemsList{
+    @apply static bg-opacity-0
+  }
+}
+
+@media(max-width:400px){
   
   div .main{
-    @apply flex flex-col-reverse
+    @apply flex flex-col-reverse px-1
   }
   div .main .img{
     content: url('./assets/images/image-hero-mobile.png');
